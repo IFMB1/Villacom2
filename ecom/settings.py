@@ -56,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.security'
 ]
 
 ROOT_URLCONF = 'ecom.urls'
@@ -138,7 +139,7 @@ STATIC_URL = '/static/'
 os.makedirs(STATIC_TMP, exist_ok=True)
 os.makedirs(STATIC_ROOT, exist_ok=True)
 
-STATIC_DIRS = (
+STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
