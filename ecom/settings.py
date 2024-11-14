@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'django.middleware.security'
+    'django.middleware.security.SecurityMiddleware',
 ]
 
 ROOT_URLCONF = 'ecom.urls'
